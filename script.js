@@ -1,6 +1,6 @@
 const textoInput = document.getElementById('input-texto');
 
-const outInput = document.querySelector("output");
+const outInput = document.getElementById("output");
 
 
   function criptografar(){
@@ -12,30 +12,25 @@ const outInput = document.querySelector("output");
     .replace(/a/g, "ai")
     .replace(/o/g, "ober")
     .replace(/u/g, "ufat");
-    document.getElementById("output").innerHTML = '<textarea readonly id = "input-texto'> + cripto + 
-    '</textarea>' + '<button class= "btn-copiar" id="copiar" onclick = "copiar()">Copiar</button>'  
-    add.EventListener()  
+    document.getElementById("output").innerHTML = `<textarea readonly id="input-texto">${cripto} 
+  </textarea><button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>`
 }
 
  function descriptografar(){
     let texto = textoInput.value;
-    
+
     let descripto = texto
     .replace(/enter/g, "e")
     .replace(/imes/g, "i")
     .replace(/ai/g, "a")
     .replace(/ober/g, "o")
     .replace(/ufat/g, "u")
-    document.getElementById("output").innerHTML = '<textarea readonly id = "input-text'> + descripto + 
-    '</textarea>' + '<button class= "btn-copiar" onclick = "copiar()">Copiar</button>'
-    add.EventListener() 
-}   
+    document.getElementById("output").innerHTML = `<textarea readonly id="input-texto">${cripto} 
+  </textarea><button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>`
+}
 
 function copiar() {
-    var textoCop = document.getElementById("#input-texto");
+    var textoCop = document.getElementById("input-texto");
     textoCop.select();
     document.execCommand('copy');
 }
-
-   
-   
