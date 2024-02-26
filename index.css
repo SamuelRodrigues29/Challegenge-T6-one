@@ -1,0 +1,93 @@
+/* declarando variaveis universais */
+:root {
+    --corprincipal: rgb(68, 135, 190);
+    --corsecundaria: rgb(213, 212, 221);
+    --cortitulo: rgb(8, 8, 8) ;
+}
+
+body {
+    background-color: var(--corsecundaria);
+}
+
+/*seletor universal */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.cabecalho h1 {
+    color: var(--cortitulo);
+}
+
+.container-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.container-input.input{
+    width: 400px;
+    height: 330px;
+}
+
+#input-texto{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--cortitulo);
+    border-radius: 15px;
+    width: 150;
+    height: 150px;
+    margin-right: 3%;
+    text-transform: uppercase;
+}
+
+#output{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--cortitulo);
+    border-radius: 15px;
+    width: 150;
+    height: 150px;
+    margin-right: 3%;
+}
+#output h2{
+    text-align: center;
+    font-size: 25px;
+    color: var(--cortitulo);
+}
+
+.container-btn button{
+    border: 2px solid var(--cortitulo);
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(60, 26, 92);
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+
+}
+
+.btn-copiar{
+    border: 2px solid var(--cortitulo);
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(60, 26, 92);
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.container-btn button:hoover{
+    border: 2px solid var(--corsecundaria);
+    transform: 0.5s all;
+}
